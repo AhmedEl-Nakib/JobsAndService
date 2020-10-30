@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.itgates.search_employee.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/searchemployee"
+        android:name="com.itgates.search_employee.search_employee"
+        android:label="fragment_search_employee"
+        tools:layout="@layout/fragment_search_employee" >
+        <action
+            android:id="@+id/action_search_employee_to_employee_result"
+            app:destination="@id/employee_result" />
+    </fragment>
+    <fragment
+        android:id="@+id/employee_result"
+        android:name="com.itgates.search_employee.employee_result"
+        android:label="fragment_employee_result"
+        tools:layout="@layout/fragment_employee_result" />
+    <fragment
+        android:id="@+id/rent"
+        android:name="com.itgates.search_employee.rent"
+        android:label="fragment_rent"
+        tools:layout="@layout/fragment_rent" >
+        <action
+            android:id="@+id/action_rent_to_rent22"
+            app:destination="@id/rent22"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_rent_to_rent3"
+            app:destination="@id/rent3"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/add_Jop"
+        android:name="com.itgates.search_employee.Add_Jop"
+        android:label="fragment_add__jop"
+        tools:layout="@layout/fragment_add__jop" />
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.itgates.search_employee.Categories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categories_to_add2"
+            app:destination="@id/add2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_categories_to_search3"
+            app:destination="@id/search3"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_categories_to_addProductFragment"
+            app:destination="@id/addProductFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/rent22"
+        android:name="com.itgates.search_employee.rent2"
+        android:label="fragment_rent2"
+        tools:layout="@layout/fragment_rent2" />
+    <fragment
+        android:id="@+id/rent3"
+        android:name="com.itgates.search_employee.rent3"
+        android:label="fragment_rent3"
+        tools:layout="@layout/fragment_rent3" >
+        <action
+            android:id="@+id/action_rent3_to_rent_result"
+            app:destination="@id/rent_result" />
+    </fragment>
+    <fragment
+        android:id="@+id/rent_result"
+        android:name="com.itgates.search_employee.rent_result"
+        android:label="fragment_rent_result"
+        tools:layout="@layout/fragment_rent_result" />
+    <fragment
+        android:id="@+id/add2"
+        android:name="com.itgates.search_employee.Add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/search2"
+        android:name="com.itgates.search_employee.search2"
+        android:label="fragment_search2"
+        tools:layout="@layout/fragment_search2" >
+        <action
+            android:id="@+id/action_search2_to_productsFragment"
+            app:destination="@id/productsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/search3"
+        android:name="com.itgates.search_employee.search"
+        android:label="search"
+        tools:layout="@layout/fragment_search"
+        >
+        <action
+            android:id="@+id/action_search3_to_search2"
+            app:destination="@id/search2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.itgates.search_employee.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.itgates.search_employee.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+
+</navigation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="Home"
+    android:id="@+id/home2"
+    android:icon="@drawable/ic_home"
+/>
+
+    <item
+        android:title="Add jop "
+        android:id="@+id/add_Jop"
+        android:icon="@drawable/ic_add"
+        />
+
+    <item
+        android:title="Search employee "
+        android:id="@+id/searchemployee"
+        android:icon="@drawable/ic_row_employee"
+        android:tooltipText="search employee"
+        />
+
+    <item
+        android:title="Places "
+        android:id="@+id/categories"
+        android:icon="@drawable/ic_search_icon"
+        />
+
+    <item
+        android:title="Rent "
+        android:id="@+id/rent"
+        android:icon="@drawable/ic_renting"
+        />
+</menu>
